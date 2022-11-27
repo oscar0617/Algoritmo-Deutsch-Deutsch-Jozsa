@@ -15,6 +15,7 @@ def verificacion(counts):
     else:
         print("Funcion Balanceada")
 
+
 def main():
     #######0->1, 1->0, FUNCION 1########
     print("========================= Pruebas Deutsch =========================")
@@ -521,7 +522,7 @@ def main():
     for i in range(0, 5):
         circuit.h(i)
     circuit.barrier()
-    circuit.cx(0,4)
+    circuit.cx(0, 4)
     circuit.barrier()
     for i in range(0, 4):
         circuit.h(i)
@@ -546,7 +547,7 @@ def main():
     for i in range(0, 5):
         circuit.h(i)
     circuit.barrier()
-    circuit.cx(1,4)
+    circuit.cx(1, 4)
     circuit.barrier()
     for i in range(0, 4):
         circuit.h(i)
@@ -571,7 +572,7 @@ def main():
     for i in range(0, 5):
         circuit.h(i)
     circuit.barrier()
-    circuit.cx(2,4)
+    circuit.cx(2, 4)
     circuit.barrier()
     for i in range(0, 4):
         circuit.h(i)
@@ -612,27 +613,6 @@ def main():
     print(circuit)
     plot_histogram(counts)
     plt.show()
+
+
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
